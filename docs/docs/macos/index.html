@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="MacOS 虚拟机 canonical/multipass  # 创建一个 VM, 1GB 内存和 5GB 磁盘 multipass launch --name myvm --mem 1G --disk 5G # 为 VM 启动一个 shell multipass shell myvm # 挂载 multipass mount ~/code myvm:/home/ubuntu/yewang/code 网络 代理 ehang-io/nps  server # 安装 sudo ./nps install # 启动 sudo nps start # 日志 # less /var/log/nps.log # 账户密码 # admin/123 client 下载 client
-./npc -server=192.168.64.1:8024 -vkey=qlati48ufop46lln -type=tcp 抓包 发包 "><meta property="og:title" content="MacOS" />
+<meta name="description" content="MacOS 虚拟机 canonical/multipass  # 创建一个 VM, 1GB 内存和 5GB 磁盘 multipass launch --name myvm --mem 1G --disk 5G # 为 VM 启动一个 shell multipass shell myvm # 挂载 multipass mount ~/code myvm:/home/ubuntu/yewang/code  网络 代理 ehang-io/nps  server # 安装 sudo ./nps install # 启动 sudo nps start # 日志 # less /var/log/nps.log # 账户密码 # admin/123 client 下载 client
+./npc -server=192.168.64.1:8024 -vkey=qlati48ufop46lln -type=tcp  snail007/goproxy   抓包 发包 "><meta property="og:title" content="MacOS" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/workenv/docs/macos/" />
@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="/workenv/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/workenv/en.search.min.3efa1944e8ba57a0ca4e30064d4c945c5473c4e62a2441d2386428593695db78.js" integrity="sha256-PvoZROi6V6DKTjAGTUyUXFRzxOYqJEHSOGQoWTaV23g="></script>
+<script defer src="/workenv/en.search.min.e96282613e9081e04580a219c9548c2e09e6e13e01e9032bf26a9386f992f4e7.js" integrity="sha256-6WKCYT6QgeBFgKIZyVSMLgnm4T4B6QMr8mqThvmS9Oc="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/workenv/docs/macos/index.xml" title="我的工作环境" />
 <!--
@@ -321,6 +321,7 @@ https://github.com/alex-shpak/hugo-book
                     <li><a href="#client">client</a></li>
                   </ul>
                 </li>
+                <li><a href="#snail007goproxyhttpsgithubcomsnail007goproxy-github-starshttpsimgshieldsiogithubstarssnail007goproxysvg"><a href="https://github.com/snail007/goproxy">snail007/goproxy</a> <img src="https://img.shields.io/github/stars/snail007/goproxy.svg" alt="Github stars"></a></li>
               </ul>
             </li>
             <li><a href="#抓包">抓包</a></li>
@@ -351,7 +352,8 @@ multipass shell myvm
 
 <span style="color:#75715e"># 挂载</span>
 multipass mount ~/code myvm:/home/ubuntu/yewang/code
-</code></pre></div><h2 id="网络">网络</h2>
+</code></pre></div><hr>
+<h2 id="网络">网络</h2>
 <h3 id="代理">代理</h3>
 <h4 id="ehang-ionpshttpsgithubcomehang-ionps-github-starshttpsimgshieldsiogithubstarsehang-ionpssvg"><a href="https://github.com/ehang-io/nps">ehang-io/nps</a> <img src="https://img.shields.io/github/stars/ehang-io/nps.svg" alt="Github stars" /></h4>
 <h5 id="server">server</h5>
@@ -369,7 +371,10 @@ sudo nps start
 </code></pre></div><h5 id="client">client</h5>
 <p><a href="https://github.com/ehang-io/nps/releases">下载 client</a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">./npc -server<span style="color:#f92672">=</span>192.168.64.1:8024 -vkey<span style="color:#f92672">=</span>qlati48ufop46lln -type<span style="color:#f92672">=</span>tcp
-</code></pre></div><h3 id="抓包">抓包</h3>
+</code></pre></div><hr>
+<h4 id="snail007goproxyhttpsgithubcomsnail007goproxy-github-starshttpsimgshieldsiogithubstarssnail007goproxysvg"><a href="https://github.com/snail007/goproxy">snail007/goproxy</a> <img src="https://img.shields.io/github/stars/snail007/goproxy.svg" alt="Github stars" /></h4>
+<hr>
+<h3 id="抓包">抓包</h3>
 <h3 id="发包">发包</h3>
 </article>
  
@@ -383,7 +388,7 @@ sudo nps start
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/ikingye/workenv/commit/dbf97d6178937badd0043516bebfa63ff2d6fd16" title='Last modified by yewang | 2020-06-08' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/ikingye/workenv/commit/05084e5e153c28cbfef3566e39de0edb698617dc" title='Last modified by yewang | 2020-06-08' target="_blank" rel="noopener">
       <img src="/workenv/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-06-08</span>
     </a>
@@ -437,6 +442,7 @@ sudo nps start
                     <li><a href="#client">client</a></li>
                   </ul>
                 </li>
+                <li><a href="#snail007goproxyhttpsgithubcomsnail007goproxy-github-starshttpsimgshieldsiogithubstarssnail007goproxysvg"><a href="https://github.com/snail007/goproxy">snail007/goproxy</a> <img src="https://img.shields.io/github/stars/snail007/goproxy.svg" alt="Github stars"></a></li>
               </ul>
             </li>
             <li><a href="#抓包">抓包</a></li>
