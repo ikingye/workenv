@@ -37,11 +37,13 @@ sudo ./nps install
 # 启动
 sudo nps start
 
-# 日志
-# less /var/log/nps.log
-
+# 访问 web
+http://localhost:8080/
 # 账户密码
 # admin/123
+
+# 日志
+sudo tail -f /var/log/nps.log
 ```
 
 ##### client
