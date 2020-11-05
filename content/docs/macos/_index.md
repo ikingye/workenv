@@ -8,7 +8,7 @@ bookCollapseSection: true
 
 ## 虚拟机
 
-### [canonical/multipass](https://github.com/canonical/multipass) ![Github stars](https://img.shields.io/github/stars/canonical/multipass.svg)
+### [canonical/multipass](https://github.com/canonical/multipass) ![Github stars](https://img.shields.io/github/stars/canonical/multipass.svg) ![Language](https://img.shields.io/github/languages/top/canonical/multipass.svg) ![Last Tag](https://img.shields.io/github/v/tag/canonical/multipass.svg?sort=semver) ![Last commit](https://img.shields.io/github/last-commit/canonical/multipass.svg)
 
 ```shell
 # 创建一个 VM, 1GB 内存和 5GB 磁盘
