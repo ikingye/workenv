@@ -4,5 +4,5 @@
 	branch = v8
 [submodule "public"]
 	path = public
-	url = https://github.com/ikingye/workenv.git
+	url = https://github.com/ikingye/workenv
 	branch = master
