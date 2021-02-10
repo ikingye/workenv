@@ -1,8 +1,10 @@
 ---
-weight: 11
+weight: 20
 title: "Linux"
+bookCollapseSection: false
 ---
 
 ## 开源镜像
 
-- [清华](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
+- [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/)
+  - [Ubuntu](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
