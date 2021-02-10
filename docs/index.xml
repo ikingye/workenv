@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>首页 on 我的工作环境</title>
-    <link>https://ikingye.github.io/workenv/</link>
+    <link>https://ikingye.github.io/apps/</link>
     <description>Recent content in 首页 on 我的工作环境</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://ikingye.github.io/workenv/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ikingye.github.io/apps/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>四星</title>
-      <link>https://ikingye.github.io/workenv/docs/macos/4/</link>
+      <link>https://ikingye.github.io/apps/docs/macos/4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/workenv/docs/macos/4/</guid>
+      <guid>https://ikingye.github.io/apps/docs/macos/4/</guid>
       <description>四星 Alfred https://www.alfredapp.com/
  V2Ray v2ray/v2ray-core V2RayX Cenmrev/V2RayX  </description>
     </item>
     
     <item>
       <title>三星</title>
-      <link>https://ikingye.github.io/workenv/docs/macos/3/</link>
+      <link>https://ikingye.github.io/apps/docs/macos/3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/workenv/docs/macos/3/</guid>
+      <guid>https://ikingye.github.io/apps/docs/macos/3/</guid>
       <description>三星 语雀 http://yuque.com/
 微信助手 MustangYM/WeChatExtension-ForMac Mac 微信功能拓展 / 微信插件 / 微信小助手 (A plugin for Mac WeChat)
 lmk123/oh-my-wechat # 安装 curl -o- -L https://omw.limingkai.cn/install.sh | bash -s # 开机自动安装小助手的功能（即在开机后自动运行一次 omw -n） omw open   Tmux gpakosz/.tmux 参考：

@@ -16,29 +16,29 @@ type: docs
 
 ## 四星
 
-| App              | 类型             | MacOS                     | Linux | Windows | iOS | Android | 评分 | 备注                                      |
-| ---------------- | ---------------- | ------------------------- | ----- | ------- | --- | ------- | ---- | ----------------------------------------- |
-| Docker           |                  | ✔                         | ✔     | ✔       |     |         | ★★★★ |                                           |
-| Alfred           |                  | [✔](docs/macos/3/#alfred) | ✗     | ✗       |     |         | ★★★★ |                                           |
-| V2Ray            |                  | [✔](docs/macos/4/#v2ray)  | ✔     | ✗       |     |         | ★★★★ |                                           |
-| GoLand           | IDE - Go         |                           |       |         |     |         | ★★★★ |                                           |
+| App                | 类型             | MacOS                     | Linux | Windows | iOS | Android | 评分 | 备注                                      |
+| ------------------ | ---------------- | ------------------------- | ----- | ------- | --- | ------- | ---- | ----------------------------------------- |
+| Docker             |                  | ✔                         | ✔     | ✔       |     |         | ★★★★ |                                           |
+| Alfred             |                  | [✔](docs/macos/3/#alfred) | ✗     | ✗       |     |         | ★★★★ |                                           |
+| V2Ray              |                  | [✔](docs/macos/4/#v2ray)  | ✔     | ✗       |     |         | ★★★★ |                                           |
+| GoLand             | IDE - Go         |                           |       |         |     |         | ★★★★ |                                           |
 | `IntelliJ IDEA`    | IDE - Java       |                           |       |         |     |         | ★★★★ |                                           |
-| PhpStorm         | IDE - PHP / 前端 |                           |       |         |     |         | ★★★★ |                                           |
-| 微信             | IM               | ✔                         |       |         |     |         | ★★★★ |                                           |
-| `draw.io`        | 作图             |                           |       |         |     |         | ★★★★ |                                           |
-| PicGo            | 图床             |                           |       |         |     |         | ★★★★ |                                           |
-| Dropbox          | 备份 - 同步      |                           |       |         |     |         | ★★★★ |                                           |
-| 一刻相册         | 备份 - 图片/视频 |                           |       |         |     |         | ★★★★ |                                           |
-| Kap              | 录屏 - GIF       |                           |       |         |     |         | ★★★★ |                                           |
+| PhpStorm           | IDE - PHP / 前端 |                           |       |         |     |         | ★★★★ |                                           |
+| 微信               | IM               | ✔                         |       |         |     |         | ★★★★ |                                           |
+| `draw.io`          | 作图             |                           |       |         |     |         | ★★★★ |                                           |
+| PicGo              | 图床             |                           |       |         |     |         | ★★★★ |                                           |
+| Dropbox            | 备份 - 同步      |                           |       |         |     |         | ★★★★ |                                           |
+| 一刻相册           | 备份 - 图片/视频 |                           |       |         |     |         | ★★★★ |                                           |
+| Kap                | 录屏 - GIF       |                           |       |         |     |         | ★★★★ |                                           |
 | `Keyboard Maestro` | 快捷键           |                           |       |         |     |         | ★★★★ |                                           |
 | `Google Chrome`    | 浏览器           |                           |       |         |     |         | ★★★★ |                                           |
-| 微信读书         | 看书             |                           |       |         |     |         | ★★★★ |                                           |
-| 语雀             | 笔记             | ✔                         |       |         |     |         | ★★★★ |                                           |
-| OmniDiskSweeper  | 系统 - 磁盘管理  |                           |       |         |     |         | ★★★★ |                                           |
-| ShiftIt          | 系统 - 窗口移动  |                           |       |         |     |         | ★★★★ |                                           |
-| `Sublime Text`   | 编辑器           | ✔                         | ✗     | ✔       |     |         | ★★★★ | 废弃，改用 [VSCode](docs/macos/3/#vscode) |
-| Multipass        | 虚拟机管理       |                           |       |         |     |         | ★★★★ |                                           |
-| 网易云音乐       | 音乐             |                           |       |         |     |         | ★★★★ |                                           |
+| 微信读书           | 看书             |                           |       |         |     |         | ★★★★ |                                           |
+| 语雀               | 笔记             | ✔                         |       |         |     |         | ★★★★ |                                           |
+| OmniDiskSweeper    | 系统 - 磁盘管理  |                           |       |         |     |         | ★★★★ |                                           |
+| ShiftIt            | 系统 - 窗口移动  |                           |       |         |     |         | ★★★★ |                                           |
+| `Sublime Text`     | 编辑器           | ✔                         | ✗     | ✔       |     |         | ★★★★ | 废弃，改用 [VSCode](docs/macos/3/#vscode) |
+| Multipass          | 虚拟机管理       |                           |       |         |     |         | ★★★★ |                                           |
+| 网易云音乐         | 音乐             |                           |       |         |     |         | ★★★★ |                                           |
 
 ---
 
@@ -60,18 +60,18 @@ type: docs
 | 微信开发者工具           | IDE - 微信      |                             |       |         |     |         | ★★★  |                           |
 | Telegram                 | IM              |                             |       |         |     |         | ★★★  |                           |
 | QQ                       | IM              |                             |       |         |     |         | ★★★  |                           |
-| Skype for Business       | IM              |                             |       |         |     |         | ★★★  |                           |
+| `Skype for Business`     | IM              |                             |       |         |     |         | ★★★  |                           |
 | Slack                    | IM              |                             |       |         |     |         | ★★★  |                           |
 | DingDing                 | IM              |                             |       |         |     |         | ★★★  |                           |
 | WeChat                   | IM              |                             |       |         |     |         | ★★★  |                           |
 | WeChat Work              | IM              |                             |       |         |     |         | ★★★  |                           |
 | zoom                     | IM - 视频       |                             |       |         |     |         | ★★★  |                           |
 | Keynote                  | Office          |                             |       |         |     |         | ★★★  |                           |
-| Microsoft Excel          | Office          |                             |       |         |     |         | ★★★  |                           |
-| Microsoft OneNote        | Office          |                             |       |         |     |         | ★★★  |                           |
-| Microsoft Outlook        | Office          |                             |       |         |     |         | ★★★  |                           |
-| Microsoft PowerPoint     | Office          |                             |       |         |     |         | ★★★  |                           |
-| Microsoft Word           | Office          |                             |       |         |     |         | ★★★  |                           |
+| `Microsoft Excel`        | Office          |                             |       |         |     |         | ★★★★ |                           |
+| `Microsoft PowerPoint`   | Office          |                             |       |         |     |         | ★★★★ |                           |
+| `Microsoft OneNote`      | 笔记            |                             |       |         |     |         | ★★★  | 废弃，改用 vscode + hugo  |
+| `Microsoft Outlook`      | 邮箱            |                             |       |         |     |         | ★★★  |                           |
+| `Microsoft Word`         | Office          |                             |       |         |     |         | ★★★  |                           |
 | Numbers                  | Office          | ✔                           | ✗     | ✗       | ✔   | ✗       | ★★★  |                           |
 | Pages                    | Office          | ✔                           | ✗     | ✗       | ✔   | ✗       | ★★★  |                           |
 | Anaconda-Navigator       | Python          |                             |       |         |     |         | ★★★  |                           |

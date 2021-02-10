@@ -1,4 +1,4 @@
-baseURL = 'https://ikingye.github.io/workenv'
+baseURL = 'https://ikingye.github.io/apps'
 title = '我的工作环境'
 theme = 'hugo-book'
 
@@ -58,7 +58,7 @@ defaultContentLanguage = 'cn'
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo = 'https://github.com/ikingye/workenv'
+  BookRepo = 'https://github.com/ikingye/apps'
 
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
