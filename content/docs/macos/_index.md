@@ -1,66 +1,15 @@
 ---
-weight: 10
+weight: 5
 title: "MacOS"
 bookCollapseSection: true
 ---
 
 # MacOS
 
-## 虚拟机
+## 微信助手
 
-### [canonical/multipass](https://github.com/canonical/multipass) ![Github stars](https://img.shields.io/github/stars/canonical/multipass.svg) ![Language](https://img.shields.io/github/languages/top/canonical/multipass.svg) ![Last Tag](https://img.shields.io/github/v/tag/canonical/multipass.svg?sort=semver) ![Last commit](https://img.shields.io/github/last-commit/canonical/multipass.svg)
+[MustangYM/WeChatExtension-ForMac](https://github.com/MustangYM/WeChatExtension-ForMac) ![Github stars](https://img.shields.io/github/stars/MustangYM/WeChatExtension-ForMac.svg) ![Language](https://img.shields.io/github/languages/top/MustangYM/WeChatExtension-ForMac.svg) ![Last Tag](https://img.shields.io/github/v/tag/MustangYM/WeChatExtension-ForMac.svg?sort=semver) ![Last commit](https://img.shields.io/github/last-commit/MustangYM/WeChatExtension-ForMac.svg)
 
-```shell
-# 创建一个 VM, 1GB 内存和 5GB 磁盘
-multipass launch --name myvm --mem 1G --disk 5G
+Mac 微信功能拓展 / 微信插件 / 微信小助手 (A plugin for Mac WeChat)
 
-# 为 VM 启动一个 shell
-multipass shell myvm
-
-# 挂载
-multipass mount ~/code myvm:/home/ubuntu/yewang/code
-```
-
----
-
-## 网络
-
-### 代理
-
-#### [ehang-io/nps](https://github.com/ehang-io/nps) ![Github stars](https://img.shields.io/github/stars/ehang-io/nps.svg)
-
-##### server
-
-```shell
-# 安装
-sudo ./nps install
-
-# 启动
-sudo nps start
-
-# 访问 web
-http://localhost:8080/
-# 账户密码
-# admin/123
-
-# 日志
-sudo tail -f /var/log/nps.log
-```
-
-##### client
-
-[下载 client](https://github.com/ehang-io/nps/releases)
-
-```shell
-./npc -server=192.168.64.1:8024 -vkey=qlati48ufop46lln -type=tcp
-```
-
----
-
-#### [snail007/goproxy](https://github.com/snail007/goproxy) ![Github stars](https://img.shields.io/github/stars/snail007/goproxy.svg)
-
----
-
-### 抓包
-
-### 发包
+[lmk123/oh-my-wechat](https://github.com/lmk123/oh-my-wechat) ![Github stars](https://img.shields.io/github/stars/lmk123/oh-my-wechat.svg) ![Language](https://img.shields.io/github/languages/top/lmk123/oh-my-wechat.svg) ![Last Tag](https://img.shields.io/github/v/tag/lmk123/oh-my-wechat.svg?sort=semver) ![Last commit](https://img.shields.io/github/last-commit/lmk123/oh-my-wechat.svg)

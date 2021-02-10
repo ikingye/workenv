@@ -9,5 +9,16 @@
 	<atom:link href="https://ikingye.github.io/workenv/docs/macos/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>编程</title>
+      <link>https://ikingye.github.io/workenv/docs/macos/cs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/workenv/docs/macos/cs/</guid>
+      <description>编程 multipass canonical/multipass # 创建一个 VM, 1GB 内存和 5GB 磁盘 multipass launch --name myvm --mem 1G --disk 5G # 为 VM 启动一个 shell multipass shell myvm # 挂载 multipass mount ~/code myvm:/home/ubuntu/yewang/code  Tmux gpakosz/.tmux 参考：
+ 手把手教你使用终端复用神器 Tmux，丢掉鼠标不是梦 [视频] 让你的 tmux 起死回生！[视频]    网络 nps ehang-io/nps server
+# 安装 sudo ./nps install # 启动 sudo nps start # 访问 web http://localhost:8080/ # 账户密码 # admin/123 # 日志 sudo tail -f /var/log/nps.</description>
+    </item>
+    
   </channel>
 </rss>

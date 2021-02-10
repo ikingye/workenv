@@ -4,12 +4,16 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="VPS zsh oh-my-zsh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh 提示符 export PROMPT=&#39;%{$fg[magenta]%}%(?..%?%1v)%n@%{$fg[green]%}%M:%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)&#39; 设置默认 shell sudo chsh -s /usr/bin/zsh  "><meta property="og:title" content="VPS" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ikingye.github.io/workenv/docs/vps/" />
+<meta name="description" content="编程 multipass canonical/multipass # 创建一个 VM, 1GB 内存和 5GB 磁盘 multipass launch --name myvm --mem 1G --disk 5G # 为 VM 启动一个 shell multipass shell myvm # 挂载 multipass mount ~/code myvm:/home/ubuntu/yewang/code  Tmux gpakosz/.tmux 参考：
+ 手把手教你使用终端复用神器 Tmux，丢掉鼠标不是梦 [视频] 让你的 tmux 起死回生！[视频]    网络 nps ehang-io/nps server
+# 安装 sudo ./nps install # 启动 sudo nps start # 访问 web http://localhost:8080/ # 账户密码 # admin/123 # 日志 sudo tail -f /var/log/nps."><meta property="og:title" content="编程" />
+<meta property="og:description" content="编程 multipass canonical/multipass # 创建一个 VM, 1GB 内存和 5GB 磁盘 multipass launch --name myvm --mem 1G --disk 5G # 为 VM 启动一个 shell multipass shell myvm # 挂载 multipass mount ~/code myvm:/home/ubuntu/yewang/code  Tmux gpakosz/.tmux 参考：
+ 手把手教你使用终端复用神器 Tmux，丢掉鼠标不是梦 [视频] 让你的 tmux 起死回生！[视频]    网络 nps ehang-io/nps server
+# 安装 sudo ./nps install # 启动 sudo nps start # 访问 web http://localhost:8080/ # 账户密码 # admin/123 # 日志 sudo tail -f /var/log/nps." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ikingye.github.io/workenv/docs/macos/cs/" />
 
-<title>VPS | 我的工作环境</title>
+<title>编程 | 我的工作环境</title>
 <link rel="icon" href="/workenv/favicon.png" type="image/x-icon">
 
 
@@ -18,7 +22,6 @@
 
 <script defer src="/workenv/en.search.min.a37eb1026952cec773418eefcb77d0bab6339f7cf4fae5a0b8bbed8861893546.js" integrity="sha256-o36xAmlSzsdzQY7vy3fQurYzn3z0&#43;uWguLvtiGGJNUY="></script>
 
-<link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/workenv/docs/vps/index.xml" title="我的工作环境" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -97,6 +100,22 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+
+  
+  <ul>
+    
+      
+        <li>
+
+  
+  <a href="/workenv/docs/macos/cs/" class="active">编程</a>
+  
+
+</li>
+      
+    
+  </ul>
+  
 
 
 
@@ -199,7 +218,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/workenv/docs/vps/" class="active">VPS</a>
+  <a href="/workenv/docs/vps/" class="">VPS</a>
   
 
 
@@ -280,7 +299,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/workenv/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>VPS</strong>
+  <strong>编程</strong>
 
   <label for="toc-control">
     <img src="/workenv/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -294,11 +313,12 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#zsh">zsh</a>
+    <li><a href="#multipass">multipass</a></li>
+    <li><a href="#tmux">Tmux</a></li>
+    <li><a href="#网络">网络</a>
       <ul>
-        <li><a href="#oh-my-zshhttpsohmyzsh"><a href="https://ohmyz.sh/">oh-my-zsh</a></a></li>
-        <li><a href="#提示符">提示符</a></li>
-        <li><a href="#设置默认-shell">设置默认 shell</a></li>
+        <li><a href="#nps">nps</a></li>
+        <li><a href="#goproxy">goproxy</a></li>
       </ul>
     </li>
   </ul>
@@ -312,15 +332,51 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="vps">VPS</h1>
-<h2 id="zsh">zsh</h2>
-<h3 id="oh-my-zshhttpsohmyzsh"><a href="https://ohmyz.sh/">oh-my-zsh</a></h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
-</code></pre></div><h3 id="提示符">提示符</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">export PROMPT<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;%{$fg[magenta]%}%(?..%?%1v)%n@%{$fg[green]%}%M:%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)&#39;</span>
-</code></pre></div><h3 id="设置默认-shell">设置默认 shell</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo chsh -s /usr/bin/zsh
+  <article class="markdown"><h1 id="编程">编程</h1>
+<h2 id="multipass">multipass</h2>
+<p><a href="https://github.com/canonical/multipass">canonical/multipass</a> <img src="https://img.shields.io/github/stars/canonical/multipass.svg" alt="Github stars" /> <img src="https://img.shields.io/github/languages/top/canonical/multipass.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/canonical/multipass.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/canonical/multipass.svg" alt="Last commit" /></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 创建一个 VM, 1GB 内存和 5GB 磁盘</span>
+multipass launch --name myvm --mem 1G --disk 5G
+
+<span style="color:#75715e"># 为 VM 启动一个 shell</span>
+multipass shell myvm
+
+<span style="color:#75715e"># 挂载</span>
+multipass mount ~/code myvm:/home/ubuntu/yewang/code
 </code></pre></div><hr>
+<h2 id="tmux">Tmux</h2>
+<p><a href="https://github.com/gpakosz/.tmux">gpakosz/.tmux</a> <img src="https://img.shields.io/github/stars/gpakosz/.tmux.svg" alt="Github stars" /> <img src="https://img.shields.io/github/languages/top/gpakosz/.tmux.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/gpakosz/.tmux.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/gpakosz/.tmux.svg" alt="Last commit" /></p>
+<p>参考：</p>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/43687973">手把手教你使用终端复用神器 Tmux，丢掉鼠标不是梦 [视频]</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/259640277">让你的 tmux 起死回生！[视频]</a></li>
+</ul>
+<hr>
+<hr>
+<h2 id="网络">网络</h2>
+<h3 id="nps">nps</h3>
+<p><a href="https://github.com/ehang-io/nps">ehang-io/nps</a> <img src="https://img.shields.io/github/stars/ehang-io/nps.svg" alt="Github stars" /> <img src="https://img.shields.io/github/languages/top/ehang-io/nps.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/ehang-io/nps.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/ehang-io/nps.svg" alt="Last commit" /></p>
+<p>server</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 安装</span>
+sudo ./nps install
+
+<span style="color:#75715e"># 启动</span>
+sudo nps start
+
+<span style="color:#75715e"># 访问 web</span>
+http://localhost:8080/
+<span style="color:#75715e"># 账户密码</span>
+<span style="color:#75715e"># admin/123</span>
+
+<span style="color:#75715e"># 日志</span>
+sudo tail -f /var/log/nps.log
+</code></pre></div><p>client</p>
+<p><a href="https://github.com/ehang-io/nps/releases">下载 client</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">./npc -server<span style="color:#f92672">=</span>192.168.64.1:8024 -vkey<span style="color:#f92672">=</span>qlati48ufop46lln -type<span style="color:#f92672">=</span>tcp
+</code></pre></div><hr>
+<h3 id="goproxy">goproxy</h3>
+<p><a href="https://github.com/snail007/goproxy">snail007/goproxy</a> <img src="https://img.shields.io/github/stars/snail007/goproxy.svg" alt="Github stars" /> <img src="https://img.shields.io/github/languages/top/snail007/goproxy.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/snail007/goproxy.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/snail007/goproxy.svg" alt="Last commit" /></p>
+<p>Proxy 是 golang 实现的高性能 http,https,websocket,tcp,socks5 代理服务器，支持内网穿透，链式代理，通讯加密，智能 HTTP,SOCKS5 代理，黑白名单，限速，限流量，限连接数，跨平台，KCP 支持，认证 API。</p>
 </article>
  
       
@@ -330,14 +386,6 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex justify-between">
 
 
-
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/workenv/commit/dbf97d6178937badd0043516bebfa63ff2d6fd16" title='Last modified by yewang | 2020-06-08' target="_blank" rel="noopener">
-      <img src="/workenv/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-06-08</span>
-    </a>
-  </div>
 
 
 
@@ -391,11 +439,12 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#zsh">zsh</a>
+    <li><a href="#multipass">multipass</a></li>
+    <li><a href="#tmux">Tmux</a></li>
+    <li><a href="#网络">网络</a>
       <ul>
-        <li><a href="#oh-my-zshhttpsohmyzsh"><a href="https://ohmyz.sh/">oh-my-zsh</a></a></li>
-        <li><a href="#提示符">提示符</a></li>
-        <li><a href="#设置默认-shell">设置默认 shell</a></li>
+        <li><a href="#nps">nps</a></li>
+        <li><a href="#goproxy">goproxy</a></li>
       </ul>
     </li>
   </ul>
