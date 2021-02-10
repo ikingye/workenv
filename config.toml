@@ -1,5 +1,5 @@
 baseURL = 'https://ikingye.github.io/apps'
-title = '我的工作环境'
+title = '我使用过的一些软件'
 theme = 'hugo-book'
 
 # Book configuration
