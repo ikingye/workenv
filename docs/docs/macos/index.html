@@ -4,9 +4,12 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="MacOS 语雀 http://yuque.com/
-微信助手 MustangYM/WeChatExtension-ForMac Mac 微信功能拓展 / 微信插件 / 微信小助手 (A plugin for Mac WeChat)
-lmk123/oh-my-wechat # 安装 curl -o- -L https://omw.limingkai.cn/install.sh | bash -s # 开机自动安装小助手的功能（即在开机后自动运行一次 omw -n） omw open "><meta property="og:title" content="MacOS" />
+<meta name="description" content="MacOS Homebrew Homebrew/brew The missing package manager for macOS (or Linux) https://brew.sh
+ Oh My Zsh https://ohmyz.sh/
+https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh # 提示符 export PROMPT=&#39;%{$fg[magenta]%}%(?..%?%1v)%n@%{$fg[green]%}%M:%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)&#39; # 设置默认 shell sudo chsh -s /usr/bin/zsh  iTerm2 https://www.iterm2.com/
+ VSCode VSCode &#43; hugo (hugo-book )
+code --list-extensions code --list-extensions --show-versions 参考：
+ Command line extension management  VSCode 推荐插件    插件 类型 推荐 备注     ESLint 格式化 - JavaScript ★★★★    TabNine 代码补全 ★★★★     ESLint Microsoft/vscode-eslint TabNine codota/tabnine-vscode Tabnine works with all major programming languages including JavaScript, Python, TypeScript, PHP, C/C&#43;&#43;, HTML/CSS, Go, Java, Ruby, C#, Rust, SQL, Bash, Kotlin, Julia, Lua, OCaml, Perl, Haskell, and React."><meta property="og:title" content="MacOS" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/workenv/docs/macos/" />
@@ -18,7 +21,7 @@ lmk123/oh-my-wechat # 安装 curl -o- -L https://omw.limingkai.cn/install.sh | b
 <link rel="stylesheet" href="/workenv/book.min.9eb34a541dae64ef88ebcc3da0ae41207b6e9fd026eb7c3da82300b0c455ed4c.css" integrity="sha256-nrNKVB2uZO&#43;I68w9oK5BIHtun9Am63w9qCMAsMRV7Uw=">
 
 
-<script defer src="/workenv/en.search.min.f9a83685e1ed7efe4eaa60a8d982ce2ad6296ecdd22b9eb6692a7c1a689c02c7.js" integrity="sha256-&#43;ag2heHtfv5OqmCo2YLOKtYpbs3SK562aSp8GmicAsc="></script>
+<script defer src="/workenv/en.search.min.2e65e9148d2ee532ca53369fa6f12dc95fb792cd8bb6580f08c054466bf74174.js" integrity="sha256-LmXpFI0u5TLKUzafpvEtyV&#43;3ks2LtlgPCMBURmv3QXQ="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/workenv/docs/macos/index.xml" title="我的工作环境" />
 <!--
@@ -91,7 +94,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/workenv/docs/macos/" class="active">MacOS</a>
+  <a href="/workenv/docs/macos/" class="collapsed active">MacOS</a>
   
 
 
@@ -107,7 +110,17 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/workenv/docs/macos/cs/" class="">编程</a>
+  <a href="/workenv/docs/macos/4/" class="">四星</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/workenv/docs/macos/3/" class="">三星</a>
   
 
 </li>
@@ -130,7 +143,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/workenv/docs/linux/" class="">Linux</a>
+  <a href="/workenv/docs/linux/" class="collapsed ">Linux</a>
   
 
 
@@ -138,12 +151,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-
-  
-  <ul>
-    
-  </ul>
-  
 
 
 
@@ -168,12 +175,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  
-  <ul>
-    
-  </ul>
-  
-
 
 
   </li>
@@ -197,12 +198,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  
-  <ul>
-    
-  </ul>
-  
-
 
 
   </li>
@@ -225,12 +220,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-
-  
-  <ul>
-    
-  </ul>
-  
 
 
 
@@ -302,8 +291,19 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#语雀">语雀</a></li>
-    <li><a href="#微信助手">微信助手</a></li>
+    <li><a href="#homebrew">Homebrew</a></li>
+    <li><a href="#oh-my-zsh">Oh My Zsh</a></li>
+    <li><a href="#iterm2">iTerm2</a></li>
+    <li><a href="#vscode">VSCode</a>
+      <ul>
+        <li><a href="#vscode-推荐插件">VSCode 推荐插件</a>
+          <ul>
+            <li><a href="#eslint">ESLint</a></li>
+            <li><a href="#tabnine">TabNine</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -316,18 +316,67 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><h1 id="macos">MacOS</h1>
-<h2 id="语雀">语雀</h2>
-<p><a href="http://yuque.com/">http://yuque.com/</a></p>
-<h2 id="微信助手">微信助手</h2>
-<p><a href="https://github.com/MustangYM/WeChatExtension-ForMac">MustangYM/WeChatExtension-ForMac</a> <img src="https://img.shields.io/github/stars/MustangYM/WeChatExtension-ForMac.svg" alt="Github stars" /> <img src="https://img.shields.io/github/languages/top/MustangYM/WeChatExtension-ForMac.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/MustangYM/WeChatExtension-ForMac.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/MustangYM/WeChatExtension-ForMac.svg" alt="Last commit" /></p>
-<p>Mac 微信功能拓展 / 微信插件 / 微信小助手 (A plugin for Mac WeChat)</p>
-<p><a href="https://github.com/lmk123/oh-my-wechat">lmk123/oh-my-wechat</a> <img src="https://img.shields.io/github/stars/lmk123/oh-my-wechat.svg" alt="Github stars" /> <img src="https://img.shields.io/github/languages/top/lmk123/oh-my-wechat.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/lmk123/oh-my-wechat.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/lmk123/oh-my-wechat.svg" alt="Last commit" /></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 安装</span>
-curl -o- -L https://omw.limingkai.cn/install.sh | bash -s
+<h2 id="homebrew">Homebrew</h2>
+<p><a href="https://github.com/Homebrew/brew">Homebrew/brew</a> <img src="https://img.shields.io/github/stars/Homebrew/brew.svg" alt="Github stars" /> <img src="https://img.shields.io/github/languages/top/Homebrew/brew.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/Homebrew/brew.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/Homebrew/brew.svg" alt="Last commit" /></p>
+<p>The missing package manager for macOS (or Linux)
+<a href="https://brew.sh">https://brew.sh</a></p>
+<hr>
+<h2 id="oh-my-zsh">Oh My Zsh</h2>
+<p><a href="https://ohmyz.sh/">https://ohmyz.sh/</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 提示符</span>
+export PROMPT<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;%{$fg[magenta]%}%(?..%?%1v)%n@%{$fg[green]%}%M:%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)&#39;</span>
 
-<span style="color:#75715e"># 开机自动安装小助手的功能（即在开机后自动运行一次 omw -n）</span>
-omw open
-</code></pre></div></article>
+<span style="color:#75715e"># 设置默认 shell</span>
+sudo chsh -s /usr/bin/zsh
+</code></pre></div><hr>
+<h2 id="iterm2">iTerm2</h2>
+<p><a href="https://www.iterm2.com/">https://www.iterm2.com/</a></p>
+<hr>
+<h2 id="vscode">VSCode</h2>
+<p><a href="https://github.com/Microsoft/vscode">VSCode</a> <img src="https://img.shields.io/github/stars/Microsoft/vscode.svg" alt="Github stars" /> + <a href="https://github.com/gohugoio/hugo"><code>hugo</code></a> <img src="https://img.shields.io/github/stars/gohugoio/hugo.svg" alt="Github stars" /> (<a href="https://github.com/alex-shpak/hugo-book"><code>hugo-book</code></a> <img src="https://img.shields.io/github/stars/alex-shpak/hugo-book.svg" alt="Github stars" />)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">code --list-extensions
+code --list-extensions --show-versions
+</code></pre></div><p>参考：</p>
+<ul>
+<li><a href="https://code.visualstudio.com/docs/editor/extension-gallery#_command-line-extension-management">Command line extension management</a></li>
+</ul>
+<h3 id="vscode-推荐插件">VSCode 推荐插件</h3>
+<table>
+<thead>
+<tr>
+<th>插件</th>
+<th>类型</th>
+<th>推荐</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESLint</td>
+<td>格式化 - JavaScript</td>
+<td>★★★★</td>
+<td></td>
+</tr>
+<tr>
+<td>TabNine</td>
+<td>代码补全</td>
+<td>★★★★</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="eslint">ESLint</h4>
+<p><a href="https://github.com/Microsoft/vscode-eslint">Microsoft/vscode-eslint</a> <img src="https://img.shields.io/github/stars/Microsoft/vscode-eslint.svg" alt="Github stars" /> <img src="https://img.shields.io/github/languages/top/Microsoft/vscode-eslint.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/Microsoft/vscode-eslint.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/Microsoft/vscode-eslint.svg" alt="Last commit" /></p>
+<h4 id="tabnine">TabNine</h4>
+<p><a href="https://github.com/codota/tabnine-vscode">codota/tabnine-vscode</a> <img src="https://img.shields.io/github/stars/codota/tabnine-vscode.svg" alt="Github stars" /> <img src="https://img.shields.io/github/languages/top/codota/tabnine-vscode.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/codota/tabnine-vscode.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/codota/tabnine-vscode.svg" alt="Last commit" /></p>
+<p>Tabnine works with all major programming languages including JavaScript, Python, TypeScript, PHP, C/C++, HTML/CSS, Go, Java, Ruby, C#, Rust, SQL, Bash, Kotlin, Julia, Lua, OCaml, Perl, Haskell, and React.​</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=All%20categories&amp;sortBy=Installs">VSCode 插件列表</a></li>
+</ul>
+<hr>
+</article>
  
       
 
@@ -339,7 +388,7 @@ omw open
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/ikingye/workenv/commit/37dc3dc9563458337d1db4074ba124dfb6ad8b37" title='Last modified by yewang | 2021-02-10' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/ikingye/workenv/commit/ae0b70d09aea00b447dc7a6cd6b1cee2ad0d1e96" title='Last modified by yewang | 2021-02-10' target="_blank" rel="noopener">
       <img src="/workenv/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2021-02-10</span>
     </a>
@@ -397,8 +446,19 @@ omw open
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#语雀">语雀</a></li>
-    <li><a href="#微信助手">微信助手</a></li>
+    <li><a href="#homebrew">Homebrew</a></li>
+    <li><a href="#oh-my-zsh">Oh My Zsh</a></li>
+    <li><a href="#iterm2">iTerm2</a></li>
+    <li><a href="#vscode">VSCode</a>
+      <ul>
+        <li><a href="#vscode-推荐插件">VSCode 推荐插件</a>
+          <ul>
+            <li><a href="#eslint">ESLint</a></li>
+            <li><a href="#tabnine">TabNine</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

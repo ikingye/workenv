@@ -1,7 +1,7 @@
 ---
 weight: 20
 title: "Linux"
-bookCollapseSection: false
+bookCollapseSection: true
 ---
 
 ## 开源镜像

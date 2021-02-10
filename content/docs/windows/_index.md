@@ -1,5 +1,5 @@
 ---
 weight: 30
 title: "Windows"
-bookCollapseSection: false
+bookCollapseSection: true
 ---
