@@ -5,12 +5,14 @@ type: docs
 
 ## 五星
 
-| App                  | 类型   | MacOS                      | Linux | Windows | iOS | Android | 评分  | 备注   |
-| -------------------- | ------ | -------------------------- | ----- | ------- | --- | ------- | ----- | ------ |
-| Homebrew             |        | [✔](docs/macos/#homebrew)  | ✗     | ✗       | ✗   | ✗       | ★★★★★ |        |
-| `Oh My Zsh`          |        | [✔](docs/macos/#oh-my-zsh) | ✔     | ✗       | ✗   | ✗       | ★★★★★ |        |
-| iTerm2               |        | [✔](docs/macos/#iterm2)    | ✗     | ✗       | ✗   | ✗       | ★★★★★ |        |
-| `Visual Studio Code` | 编辑器 | [✔](docs/macos/#vscode)    | ✔     | ✔       | ✗   | ✗       | ★★★★★ | VSCode |
+| App                  | 类型       | MacOS                      | Linux | Windows | iOS | Android | 评分  | 备注   |
+| -------------------- | ---------- | -------------------------- | ----- | ------- | --- | ------- | ----- | ------ |
+| Homebrew             |            | [✔](docs/macos/#homebrew)  | ✗     | ✗       | ✗   | ✗       | ★★★★★ |        |
+| `Oh My Zsh`          |            | [✔](docs/macos/#oh-my-zsh) | ✔     | ✗       | ✗   | ✗       | ★★★★★ |        |
+| iTerm2               |            | [✔](docs/macos/#iterm2)    | ✗     | ✗       | ✗   | ✗       | ★★★★★ |        |
+| `Visual Studio Code` | 编辑器     | [✔](docs/macos/#vscode)    | ✔     | ✔       | ✗   | ✗       | ★★★★★ | VSCode |
+| GoLand               | IDE - Go   | [✔](docs/macos/#goland)    |       |         |     |         | ★★★★  |        |
+| `IntelliJ IDEA`      | IDE - Java | [✔](docs/macos/#intellij-idea)    |       |         |     |         | ★★★★  |        |
 
 ---
 
@@ -21,8 +23,6 @@ type: docs
 | Docker             |                  | ✔                         | ✔     | ✔       |     |         | ★★★★ |                                           |
 | Alfred             |                  | [✔](docs/macos/3/#alfred) | ✗     | ✗       |     |         | ★★★★ |                                           |
 | V2Ray              |                  | [✔](docs/macos/4/#v2ray)  | ✔     | ✗       |     |         | ★★★★ |                                           |
-| GoLand             | IDE - Go         |                           |       |         |     |         | ★★★★ |                                           |
-| `IntelliJ IDEA`    | IDE - Java       |                           |       |         |     |         | ★★★★ |                                           |
 | PhpStorm           | IDE - PHP / 前端 |                           |       |         |     |         | ★★★★ |                                           |
 | 微信               | IM               | ✔                         |       |         |     |         | ★★★★ |                                           |
 | `draw.io`          | 作图             |                           |       |         |     |         | ★★★★ |                                           |
