@@ -105,12 +105,18 @@ https://www.iterm2.com/
 
 ## VSCode
 
-[VSCode](https://github.com/Microsoft/vscode) ![Github stars](https://img.shields.io/github/stars/Microsoft/vscode.svg) + [`hugo`](https://github.com/gohugoio/hugo) ![Github stars](https://img.shields.io/github/stars/gohugoio/hugo.svg) ([`hugo-book`](https://github.com/alex-shpak/hugo-book) ![Github stars](https://img.shields.io/github/stars/alex-shpak/hugo-book.svg))
+[Microsoft/vscode](https://github.com/Microsoft/vscode) ![Github stars](https://img.shields.io/github/stars/Microsoft/vscode.svg) ![Language](https://img.shields.io/github/languages/top/Microsoft/vscode.svg) ![Last Tag](https://img.shields.io/github/v/tag/Microsoft/vscode.svg?sort=semver) ![Last commit](https://img.shields.io/github/last-commit/Microsoft/vscode.svg)
+
+### 插件列表
 
 ```shell
 code --list-extensions
 code --list-extensions --show-versions
 ```
+
+[ouuan/my-vscode-extensions](https://github.com/ouuan/my-vscode-extensions) ![Github stars](https://img.shields.io/github/stars/ouuan/my-vscode-extensions.svg) ![Language](https://img.shields.io/github/languages/top/ouuan/my-vscode-extensions.svg) ![Last Tag](https://img.shields.io/github/v/tag/ouuan/my-vscode-extensions.svg?sort=semver) ![Last commit](https://img.shields.io/github/last-commit/ouuan/my-vscode-extensions.svg)
+
+List your installed VS Code extensions in a Markdown file
 
 参考：
 
