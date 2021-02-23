@@ -9,29 +9,5 @@
 	<atom:link href="https://ikingye.github.io/apps/docs/macos/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>四星</title>
-      <link>https://ikingye.github.io/apps/docs/macos/4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/apps/docs/macos/4/</guid>
-      <description>四星 Alfred https://www.alfredapp.com/
- V2Ray v2ray/v2ray-core V2RayX Cenmrev/V2RayX  WakaTime 统计你的编程时间
-https://wakatime.com/
- </description>
-    </item>
-    
-    <item>
-      <title>三星</title>
-      <link>https://ikingye.github.io/apps/docs/macos/3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/apps/docs/macos/3/</guid>
-      <description>三星 语雀 http://yuque.com/
-微信助手 MustangYM/WeChatExtension-ForMac Mac 微信功能拓展 / 微信插件 / 微信小助手 (A plugin for Mac WeChat)
-lmk123/oh-my-wechat # 安装 curl -o- -L https://omw.limingkai.cn/install.sh | bash -s # 开机自动安装小助手的功能（即在开机后自动运行一次 omw -n） omw open   Tmux gpakosz/.tmux 参考：
- 手把手教你使用终端复用神器 Tmux，丢掉鼠标不是梦 [视频] 让你的 tmux 起死回生！[视频]    multipass canonical/multipass # 创建一个 VM, 1GB 内存和 5GB 磁盘 multipass launch --name myvm --mem 1G --disk 5G # 为 VM 启动一个 shell multipass shell myvm # 挂载 multipass mount ~/code myvm:/home/ubuntu/yewang/code   neovim neovim/neovim Vim-fork focused on extensibility and usability https://neovim.</description>
-    </item>
-    
   </channel>
 </rss>
