@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="GitHub 设置代理 git config --global http.proxy &#34;http://127.0.0.1:8081&#34; git config --global https.proxy &#34;http://127.0.0.1:8081&#34; # socks5 代理（如 Shadowsocks） git config --global http.proxy &#34;socks5://127.0.0.1:1080&#34; git config --global https.proxy &#34;socks5://127.0.0.1:1080&#34; # 取消代理 git config --global --unset http.proxy git config --global --unset https.proxy  学习 Github Github Learning Lab Introduction to GitHub  Github 工具 cli/cli  GitHub’s official command line tool https://cli.github.com
+github/hub  A command-line tool that makes git easier to use with GitHub."><meta property="og:title" content="GitHub" />
+<meta property="og:description" content="GitHub 设置代理 git config --global http.proxy &#34;http://127.0.0.1:8081&#34; git config --global https.proxy &#34;http://127.0.0.1:8081&#34; # socks5 代理（如 Shadowsocks） git config --global http.proxy &#34;socks5://127.0.0.1:1080&#34; git config --global https.proxy &#34;socks5://127.0.0.1:1080&#34; # 取消代理 git config --global --unset http.proxy git config --global --unset https.proxy  学习 Github Github Learning Lab Introduction to GitHub  Github 工具 cli/cli  GitHub’s official command line tool https://cli.github.com
+github/hub  A command-line tool that makes git easier to use with GitHub." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ikingye.github.io/apps/docs/macos/3/github/" />
+
+<title>GitHub | 一些软件</title>
+<link rel="icon" href="/apps/favicon.png" type="image/x-icon">
+
+
+<link rel="stylesheet" href="/apps/book.min.9eb34a541dae64ef88ebcc3da0ae41207b6e9fd026eb7c3da82300b0c455ed4c.css" integrity="sha256-nrNKVB2uZO&#43;I68w9oK5BIHtun9Am63w9qCMAsMRV7Uw=">
+
+
+<script defer src="/apps/en.search.min.dafd05d9c68d58b590c8dda849ae596c02fd49b6191e77347ab25e6f5989879c.js" integrity="sha256-2v0F2caNWLWQyN2oSa5ZbAL9SbYZHnc0erJeb1mJh5w="></script>
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/apps"><span>一些软件</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+<ul>
+  <li><a href="https://kingye.me" target="_blank" rel="noopener noreferrer">博客</a></li>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png" target="_blank" rel="noopener noreferrer">公众号</a></li>
+  <li><a href="https://github.com/ikingye" target="_blank" rel="noopener noreferrer">Github</a></li>
+  <li><a href="https://weibo.com/kingyip15215" target="_blank" rel="noopener noreferrer">微博</a></li>
+  <li><a href="https://www.zhihu.com/people/wutongyip" target="_blank" rel="noopener noreferrer">知乎</a></li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/apps/docs/macos/" class="">MacOS</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/apps/docs/macos/5/" class="collapsed ">五星</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/apps/docs/macos/4/" class="collapsed ">四星</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/apps/docs/macos/3/" class="collapsed ">三星</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  
+  <a href="/apps/docs/macos/3/github/" class="active">GitHub</a>
+  
+
+</li>
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/apps/docs/macos/3/git/" class="collapsed ">git</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/apps/docs/macos/3/ssh/" class="collapsed ">ssh</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/apps/docs/macos/3/package-manager/" class="collapsed ">包管理工具</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        <li>
+
+  
+  <a href="/apps/docs/macos/3/hhkb/" class="">HHKB</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/apps/docs/macos/3/axure/" class="">Axure</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/apps/docs/macos/3/mas/" class="">Mas</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/apps/docs/macos/3/picgo/" class="">picgo</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/apps/docs/macos/3/tmux/" class="">tmux</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/apps/docs/macos/3/vim/" class="">vim</a>
+  
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/apps/docs/linux/" class="collapsed ">Linux</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>Windows</span>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>iOS</span>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>Android</span>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr />
+<ul>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>
+  <li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target="_blank" rel="noopener noreferrer"><img src="//pub.idqqimg.com/wpa/images/group.png"></a></li>
+</ul>
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/apps/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>GitHub</strong>
+
+  <label for="toc-control">
+    <img src="/apps/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#设置代理">设置代理</a></li>
+    <li><a href="#学习-github">学习 Github</a>
+      <ul>
+        <li><a href="#github-learning-labhttpslabgithubcom"><a href="https://lab.github.com/">Github Learning Lab</a></a>
+          <ul>
+            <li><a href="#introduction-to-githubhttpslabgithubcomgithubtrainingintroduction-to-github"><a href="https://lab.github.com/githubtraining/introduction-to-github">Introduction to GitHub</a></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#github-工具">Github 工具</a>
+      <ul>
+        <li><a href="#cliclihttpsgithubcomclicli-github-starshttpsimgshieldsiogithubstarscliclisvg"><a href="https://github.com/cli/cli">cli/cli</a> <img src="https://img.shields.io/github/stars/cli/cli.svg" alt="Github stars"></a></li>
+        <li><a href="#githubhubhttpsgithubcomgithubhub-github-starshttpsimgshieldsiogithubstarsgithubhubsvg"><a href="https://github.com/github/hub">github/hub</a> <img src="https://img.shields.io/github/stars/github/hub.svg" alt="Github stars"></a></li>
+      </ul>
+    </li>
+    <li><a href="#开源库-素材--规范">开源库 素材 / 规范</a>
+      <ul>
+        <li><a href="#徽章-shieldsiohttpsshieldsio">徽章 <a href="https://shields.io/">shields.io</a></a></li>
+        <li><a href="#github-star-历史">Github star 历史</a>
+          <ul>
+            <li><a href="#timqianstar-historyhttpsgithubcomtimqianstar-history-github-starshttpsimgshieldsiogithubstarstimqianstar-historysvg"><a href="https://github.com/timqian/star-history">timqian/star-history</a> <img src="https://img.shields.io/github/stars/timqian/star-history.svg" alt="Github stars"></a></li>
+            <li><a href="#vesoft-incgithub-statisticshttpsgithubcomvesoft-incgithub-statistics-github-starshttpsimgshieldsiogithubstarsvesoft-incgithub-statisticssvg"><a href="https://github.com/vesoft-inc/github-statistics">vesoft-inc/github-statistics</a> <img src="https://img.shields.io/github/stars/vesoft-inc/github-statistics.svg" alt="Github stars"></a></li>
+            <li><a href="#antonmedvsparkhttpsgithubcomantonmedvspark-github-starshttpsimgshieldsiogithubstarsantonmedvsparksvg"><a href="https://github.com/antonmedv/spark">antonmedv/spark</a> <img src="https://img.shields.io/github/stars/antonmedv/spark.svg" alt="Github stars"></a></li>
+            <li><a href="#seladbstartrack-jshttpsgithubcomseladbstartrack-js-github-starshttpsimgshieldsiogithubstarsseladbstartrack-jssvg"><a href="https://github.com/seladb/startrack-js">seladb/startrack-js</a> <img src="https://img.shields.io/github/stars/seladb/startrack-js.svg" alt="Github stars"></a></li>
+            <li><a href="#elliotreborngithub-starshttpsgithubcomelliotreborngithub-stars-github-starshttpsimgshieldsiogithubstarselliotreborngithub-starssvg"><a href="https://github.com/elliotreborn/github-stars">elliotreborn/github-stars</a> <img src="https://img.shields.io/github/stars/elliotreborn/github-stars.svg" alt="Github stars"></a></li>
+          </ul>
+        </li>
+        <li><a href="#github-pr-统计">Github PR 统计</a></li>
+        <li><a href="#开源相关工作岗位">开源相关工作岗位</a></li>
+        <li><a href="#角落标志-tholmangithub-cornershttpsgithubcomtholmangithub-corners-github-starshttpsimgshieldsiogithubstarstholmangithub-cornerssvg">角落标志 <a href="https://github.com/tholman/github-corners">tholman/github-corners</a> <img src="https://img.shields.io/github/stars/tholman/github-corners.svg" alt="Github stars"></a></li>
+      </ul>
+    </li>
+    <li><a href="#github-apps">GitHub Apps</a>
+      <ul>
+        <li><a href="#mergifyhttpsgithubcomappsmergify"><a href="https://github.com/apps/Mergify">Mergify</a></a>
+          <ul>
+            <li><a href="#mergifyiomergify-enginehttpsgithubcommergifyiomergify-engine-github-starshttpsimgshieldsiogithubstarsmergifyiomergify-enginesvg"><a href="https://github.com/Mergifyio/mergify-engine">Mergifyio/mergify-engine</a> <img src="https://img.shields.io/github/stars/Mergifyio/mergify-engine.svg" alt="Github stars"></a></li>
+          </ul>
+        </li>
+        <li><a href="#netlifyhttpsgithubcomappsnetlify"><a href="https://github.com/apps/netlify">Netlify</a></a></li>
+        <li><a href="#weipull">[wei/pull]</a></li>
+        <li><a href="#pullhttpsgithubcomappspull"><a href="https://github.com/apps/pull">Pull</a></a></li>
+        <li><a href="#probotweekly-digesthttpsgithubcomprobotweekly-digest-github-starshttpsimgshieldsiogithubstarsprobotweekly-digestsvg"><a href="https://github.com/probot/weekly-digest">probot/weekly-digest</a> <img src="https://img.shields.io/github/stars/probot/weekly-digest.svg" alt="Github stars"></a></li>
+      </ul>
+    </li>
+    <li><a href="#github-actions">GitHub Actions</a></li>
+    <li><a href="#github-工具开发">Github 工具开发</a>
+      <ul>
+        <li><a href="#webhook">webhook</a>
+          <ul>
+            <li><a href="#neteasegamegit-webhookhttpsgithubcomneteasegamegit-webhook-github-starshttpsimgshieldsiogithubstarsneteasegamegit-webhooksvg"><a href="https://github.com/NetEaseGame/git-webhook">NetEaseGame/git-webhook</a> <img src="https://img.shields.io/github/stars/NetEaseGame/git-webhook.svg" alt="Github stars"></a></li>
+            <li><a href="#github-webhook-handlerhttpsgithubcomgithub-webhook-handler-github-starshttpsimgshieldsiogithubstarsgithub-webhook-handlersvg"><a href="https://github.com/github-webhook-handler">github-webhook-handler</a> <img src="https://img.shields.io/github/stars/github-webhook-handler.svg" alt="Github stars"></a></li>
+            <li><a href="#go-playgroundwebhookshttpsgithubcomgo-playgroundwebhooks-github-starshttpsimgshieldsiogithubstarsgo-playgroundwebhookssvg"><a href="https://github.com/go-playground/webhooks">go-playground/webhooks</a> <img src="https://img.shields.io/github/stars/go-playground/webhooks.svg" alt="Github stars"></a></li>
+            <li><a href="#hustccwebhookithttpsgithubcomhustccwebhookit-github-starshttpsimgshieldsiogithubstarshustccwebhookitsvg"><a href="https://github.com/hustcc/webhookit">hustcc/webhookit</a> <img src="https://img.shields.io/github/stars/hustcc/webhookit.svg" alt="Github stars"></a></li>
+          </ul>
+        </li>
+        <li><a href="#gordaissue-manhttpsgithubcomgordaissue-man-github-starshttpsimgshieldsiogithubstarsgordaissue-mansvg"><a href="https://github.com/gorda/issue-man">gorda/issue-man</a> <img src="https://img.shields.io/github/stars/gorda/issue-man.svg" alt="Github stars"></a></li>
+        <li><a href="#building-apps">Building apps</a></li>
+        <li><a href="#building-actions">Building actions</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="github">GitHub</h1>
+<h2 id="设置代理">设置代理</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git config --global http.proxy <span style="color:#e6db74">&#34;http://127.0.0.1:8081&#34;</span>
+git config --global https.proxy <span style="color:#e6db74">&#34;http://127.0.0.1:8081&#34;</span>
+
+<span style="color:#75715e"># socks5 代理（如 Shadowsocks）</span>
+git config --global http.proxy <span style="color:#e6db74">&#34;socks5://127.0.0.1:1080&#34;</span>
+git config --global https.proxy <span style="color:#e6db74">&#34;socks5://127.0.0.1:1080&#34;</span>
+
+<span style="color:#75715e"># 取消代理</span>
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+</code></pre></div><hr>
+<h2 id="学习-github">学习 Github</h2>
+<h3 id="github-learning-labhttpslabgithubcom"><a href="https://lab.github.com/">Github Learning Lab</a></h3>
+<h4 id="introduction-to-githubhttpslabgithubcomgithubtrainingintroduction-to-github"><a href="https://lab.github.com/githubtraining/introduction-to-github">Introduction to GitHub</a></h4>
+<hr>
+<h2 id="github-工具">Github 工具</h2>
+<h3 id="cliclihttpsgithubcomclicli-github-starshttpsimgshieldsiogithubstarscliclisvg"><a href="https://github.com/cli/cli">cli/cli</a> <img src="https://img.shields.io/github/stars/cli/cli.svg" alt="Github stars" /></h3>
+<p>GitHub’s official command line tool <a href="https://cli.github.com">https://cli.github.com</a></p>
+<h3 id="githubhubhttpsgithubcomgithubhub-github-starshttpsimgshieldsiogithubstarsgithubhubsvg"><a href="https://github.com/github/hub">github/hub</a> <img src="https://img.shields.io/github/stars/github/hub.svg" alt="Github stars" /></h3>
+<p>A command-line tool that makes git easier to use with GitHub. <a href="https://hub.github.com/">https://hub.github.com/</a></p>
+<hr>
+<h2 id="开源库-素材--规范">开源库 素材 / 规范</h2>
+<h3 id="徽章-shieldsiohttpsshieldsio">徽章 <a href="https://shields.io/">shields.io</a></h3>
+<p>如：</p>
+<p><img src="https://img.shields.io/github/stars/doocs/advanced-java.svg" alt="Github stars" /></p>
+<p>参考：</p>
+<ul>
+<li>
+<p><a href="https://sspai.com/post/59593">用 [Substats] 和 Shields.io 为你的个人主页定制动态数据小牌子</a></p>
+<p><a href="https://github.com/spencerwooo/Substats">spencerwooo/Substats</a> <img src="https://img.shields.io/github/stars/spencerwooo/Substats.svg" alt="Github stars" /></p>
+</li>
+</ul>
+<hr>
+<h3 id="github-star-历史">Github star 历史</h3>
+<h4 id="timqianstar-historyhttpsgithubcomtimqianstar-history-github-starshttpsimgshieldsiogithubstarstimqianstar-historysvg"><a href="https://github.com/timqian/star-history">timqian/star-history</a> <img src="https://img.shields.io/github/stars/timqian/star-history.svg" alt="Github stars" /></h4>
+<p><a href="https://star-history.t9t.io/">https://star-history.t9t.io/</a></p>
+<h4 id="vesoft-incgithub-statisticshttpsgithubcomvesoft-incgithub-statistics-github-starshttpsimgshieldsiogithubstarsvesoft-incgithub-statisticssvg"><a href="https://github.com/vesoft-inc/github-statistics">vesoft-inc/github-statistics</a> <img src="https://img.shields.io/github/stars/vesoft-inc/github-statistics.svg" alt="Github stars" /></h4>
+<p>A react static app for displaying github repo statistiscs like Star History, Fork History and more.</p>
+<p><a href="https://vesoft-inc.github.io/github-statistics/">https://vesoft-inc.github.io/github-statistics/</a></p>
+<h4 id="antonmedvsparkhttpsgithubcomantonmedvspark-github-starshttpsimgshieldsiogithubstarsantonmedvsparksvg"><a href="https://github.com/antonmedv/spark">antonmedv/spark</a> <img src="https://img.shields.io/github/stars/antonmedv/spark.svg" alt="Github stars" /></h4>
+<p><a href="https://stars.medv.io/servicemesher/istio-handbook"><img src="https://stars.medv.io/servicemesher/istio-handbook.svg" alt="GitHub Star Sparkline" /></a></p>
+<h4 id="seladbstartrack-jshttpsgithubcomseladbstartrack-js-github-starshttpsimgshieldsiogithubstarsseladbstartrack-jssvg"><a href="https://github.com/seladb/startrack-js">seladb/startrack-js</a> <img src="https://img.shields.io/github/stars/seladb/startrack-js.svg" alt="Github stars" /></h4>
+<p>GitHub star history and stats - based on JavaScript only!</p>
+<p><a href="https://seladb.github.io/StarTrack-js/">https://seladb.github.io/StarTrack-js/</a></p>
+<h4 id="elliotreborngithub-starshttpsgithubcomelliotreborngithub-stars-github-starshttpsimgshieldsiogithubstarselliotreborngithub-starssvg"><a href="https://github.com/elliotreborn/github-stars">elliotreborn/github-stars</a> <img src="https://img.shields.io/github/stars/elliotreborn/github-stars.svg" alt="Github stars" /></h4>
+<p>技术栈的 star 趋势数据</p>
+<hr>
+<h3 id="github-pr-统计">Github PR 统计</h3>
+<h3 id="开源相关工作岗位">开源相关工作岗位</h3>
+<p><a href="https://github.com/t9tio/open-source-jobs">t9tio/open-source-jobs</a> <img src="https://img.shields.io/github/stars/t9tio/open-source-jobs.svg" alt="Github stars" /></p>
+<p>A list of Open Source projects offering jobs. <a href="https://oo.t9t.io/organizations">https://oo.t9t.io/organizations</a></p>
+<hr>
+<h3 id="角落标志-tholmangithub-cornershttpsgithubcomtholmangithub-corners-github-starshttpsimgshieldsiogithubstarstholmangithub-cornerssvg">角落标志 <a href="https://github.com/tholman/github-corners">tholman/github-corners</a> <img src="https://img.shields.io/github/stars/tholman/github-corners.svg" alt="Github stars" /></h3>
+<p><a href="http://tholman.com/github-corners/">http://tholman.com/github-corners/</a></p>
+<p>如：
+<img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200330145209.png" alt="" /></p>
+<hr>
+<h2 id="github-apps">GitHub Apps</h2>
+<ul>
+<li>Run persistently and can react to events quickly.</li>
+<li>Work great when persistent data is needed.</li>
+<li>Work best with API requests that aren&rsquo;t time consuming.</li>
+<li>Run on a server or compute infrastructure that you provide.</li>
+</ul>
+<p>参考：</p>
+<ul>
+<li><a href="https://help.github.com/en/actions/building-actions/about-actions#strengths-of-github-actions-and-github-apps">Strengths of GitHub Actions and GitHub Apps</a></li>
+</ul>
+<h3 id="mergifyhttpsgithubcomappsmergify"><a href="https://github.com/apps/Mergify">Mergify</a></h3>
+<p>Stop merging your pull requests manually.</p>
+<p>We save your time by automatically merging, commenting, rebasing, updating, labeling, backporting, closing, assigning, your pull requests.</p>
+<h4 id="mergifyiomergify-enginehttpsgithubcommergifyiomergify-engine-github-starshttpsimgshieldsiogithubstarsmergifyiomergify-enginesvg"><a href="https://github.com/Mergifyio/mergify-engine">Mergifyio/mergify-engine</a> <img src="https://img.shields.io/github/stars/Mergifyio/mergify-engine.svg" alt="Github stars" /></h4>
+<p>Engine for Mergify <a href="https://mergify.io">https://mergify.io</a></p>
+<h3 id="netlifyhttpsgithubcomappsnetlify"><a href="https://github.com/apps/netlify">Netlify</a></h3>
+<h3 id="weipull">[wei/pull]</h3>
+<h3 id="pullhttpsgithubcomappspull"><a href="https://github.com/apps/pull">Pull</a></h3>
+<p>Keep your forks up-to-date via automated PRs</p>
+<p><a href="https://github.com/wei/pull">wei/pull</a> <img src="https://img.shields.io/github/stars/wei/pull.svg" alt="Github stars" /></p>
+<h3 id="probotweekly-digesthttpsgithubcomprobotweekly-digest-github-starshttpsimgshieldsiogithubstarsprobotweekly-digestsvg"><a href="https://github.com/probot/weekly-digest">probot/weekly-digest</a> <img src="https://img.shields.io/github/stars/probot/weekly-digest.svg" alt="Github stars" /></h3>
+<p>自动生成周报到 issue</p>
+<h2 id="github-actions">GitHub Actions</h2>
+<ul>
+<li>Provide automation that can perform continuous integration and continuous deployment.</li>
+<li>Can run directly on runner machines or in Docker containers.</li>
+<li>Can include access to a clone of your repository, enabling deployment and publishing tools, code formatters, and command line tools to access your code.</li>
+<li>Don&rsquo;t require you to deploy code or serve an app.</li>
+<li>Have a simple interface to create and use secrets, which enables actions to interact with third-party services without needing to store the credentials of the person using the action.</li>
+</ul>
+<hr>
+<h2 id="github-工具开发">Github 工具开发</h2>
+<h3 id="webhook">webhook</h3>
+<h4 id="neteasegamegit-webhookhttpsgithubcomneteasegamegit-webhook-github-starshttpsimgshieldsiogithubstarsneteasegamegit-webhooksvg"><a href="https://github.com/NetEaseGame/git-webhook">NetEaseGame/git-webhook</a> <img src="https://img.shields.io/github/stars/NetEaseGame/git-webhook.svg" alt="Github stars" /></h4>
+<p>使用 Python Flask + SQLAchemy + Celery + Redis + React 开发的用于迅速搭建并使用 WebHook 进行自动化部署和运维，支持 Github / GitLab / Gogs / GitOsc。 <a href="https://webhook.hust.cc/">https://webhook.hust.cc/</a></p>
+<p>若觉得 git-webhook 部署依然比较复杂，可以尝试更为简洁的 cli 版本 <a href="https://github.com/hustcc/webhookit">hustcc/webhookit</a> <img src="https://img.shields.io/github/stars/hustcc/webhookit.svg" alt="Github stars" /></p>
+<hr>
+<h4 id="github-webhook-handlerhttpsgithubcomgithub-webhook-handler-github-starshttpsimgshieldsiogithubstarsgithub-webhook-handlersvg"><a href="https://github.com/github-webhook-handler">github-webhook-handler</a> <img src="https://img.shields.io/github/stars/github-webhook-handler.svg" alt="Github stars" /></h4>
+<p>Node.js web handler / middleware for processing GitHub Webhooks</p>
+<hr>
+<h4 id="go-playgroundwebhookshttpsgithubcomgo-playgroundwebhooks-github-starshttpsimgshieldsiogithubstarsgo-playgroundwebhookssvg"><a href="https://github.com/go-playground/webhooks">go-playground/webhooks</a> <img src="https://img.shields.io/github/stars/go-playground/webhooks.svg" alt="Github stars" /></h4>
+<p>Webhook receiver for GitHub, Bitbucket, GitLab, Gogs</p>
+<hr>
+<h4 id="hustccwebhookithttpsgithubcomhustccwebhookit-github-starshttpsimgshieldsiogithubstarshustccwebhookitsvg"><a href="https://github.com/hustcc/webhookit">hustcc/webhookit</a> <img src="https://img.shields.io/github/stars/hustcc/webhookit.svg" alt="Github stars" /></h4>
+<p>Simple git webhook cli tool for automation tasks, bind git webhook to action.</p>
+<hr>
+<h3 id="gordaissue-manhttpsgithubcomgordaissue-man-github-starshttpsimgshieldsiogithubstarsgordaissue-mansvg"><a href="https://github.com/gorda/issue-man">gorda/issue-man</a> <img src="https://img.shields.io/github/stars/gorda/issue-man.svg" alt="Github stars" /></h3>
+<hr>
+<h3 id="building-apps">Building apps</h3>
+<p>参考：</p>
+<ul>
+<li><a href="https://developer.github.com/apps/">Building apps</a></li>
+</ul>
+<h3 id="building-actions">Building actions</h3>
+<p>参考：</p>
+<ul>
+<li><a href="https://help.github.com/en/actions/building-actions">Building actions</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        <div>
+    <br>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <p><span id="busuanzi_container_page_pv">本文访问量 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> 次</span></p>
+    <p><span id="busuanzi_container_site_pv">本站总访问量 <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span> 次</span></p>
+    <p><span id="busuanzi_container_site_uv">本站总访客数 <span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span> 人次</span></p>
+</div>
+
+
+      </footer>
+
+      
+  
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/note-cs"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
+
+<div id="footer">
+  <p>
+    <a href="https://kingye.me">叶王</a> &copy; 2013-2020
+    版权所有。如果本文档对你有所帮助，可以<a
+      href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png"
+      target="_blank"
+      rel="noopener noreferrer"
+      >请作者喝饮料</a
+    >。
+  </p>
+</div>
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#设置代理">设置代理</a></li>
+    <li><a href="#学习-github">学习 Github</a>
+      <ul>
+        <li><a href="#github-learning-labhttpslabgithubcom"><a href="https://lab.github.com/">Github Learning Lab</a></a>
+          <ul>
+            <li><a href="#introduction-to-githubhttpslabgithubcomgithubtrainingintroduction-to-github"><a href="https://lab.github.com/githubtraining/introduction-to-github">Introduction to GitHub</a></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#github-工具">Github 工具</a>
+      <ul>
+        <li><a href="#cliclihttpsgithubcomclicli-github-starshttpsimgshieldsiogithubstarscliclisvg"><a href="https://github.com/cli/cli">cli/cli</a> <img src="https://img.shields.io/github/stars/cli/cli.svg" alt="Github stars"></a></li>
+        <li><a href="#githubhubhttpsgithubcomgithubhub-github-starshttpsimgshieldsiogithubstarsgithubhubsvg"><a href="https://github.com/github/hub">github/hub</a> <img src="https://img.shields.io/github/stars/github/hub.svg" alt="Github stars"></a></li>
+      </ul>
+    </li>
+    <li><a href="#开源库-素材--规范">开源库 素材 / 规范</a>
+      <ul>
+        <li><a href="#徽章-shieldsiohttpsshieldsio">徽章 <a href="https://shields.io/">shields.io</a></a></li>
+        <li><a href="#github-star-历史">Github star 历史</a>
+          <ul>
+            <li><a href="#timqianstar-historyhttpsgithubcomtimqianstar-history-github-starshttpsimgshieldsiogithubstarstimqianstar-historysvg"><a href="https://github.com/timqian/star-history">timqian/star-history</a> <img src="https://img.shields.io/github/stars/timqian/star-history.svg" alt="Github stars"></a></li>
+            <li><a href="#vesoft-incgithub-statisticshttpsgithubcomvesoft-incgithub-statistics-github-starshttpsimgshieldsiogithubstarsvesoft-incgithub-statisticssvg"><a href="https://github.com/vesoft-inc/github-statistics">vesoft-inc/github-statistics</a> <img src="https://img.shields.io/github/stars/vesoft-inc/github-statistics.svg" alt="Github stars"></a></li>
+            <li><a href="#antonmedvsparkhttpsgithubcomantonmedvspark-github-starshttpsimgshieldsiogithubstarsantonmedvsparksvg"><a href="https://github.com/antonmedv/spark">antonmedv/spark</a> <img src="https://img.shields.io/github/stars/antonmedv/spark.svg" alt="Github stars"></a></li>
+            <li><a href="#seladbstartrack-jshttpsgithubcomseladbstartrack-js-github-starshttpsimgshieldsiogithubstarsseladbstartrack-jssvg"><a href="https://github.com/seladb/startrack-js">seladb/startrack-js</a> <img src="https://img.shields.io/github/stars/seladb/startrack-js.svg" alt="Github stars"></a></li>
+            <li><a href="#elliotreborngithub-starshttpsgithubcomelliotreborngithub-stars-github-starshttpsimgshieldsiogithubstarselliotreborngithub-starssvg"><a href="https://github.com/elliotreborn/github-stars">elliotreborn/github-stars</a> <img src="https://img.shields.io/github/stars/elliotreborn/github-stars.svg" alt="Github stars"></a></li>
+          </ul>
+        </li>
+        <li><a href="#github-pr-统计">Github PR 统计</a></li>
+        <li><a href="#开源相关工作岗位">开源相关工作岗位</a></li>
+        <li><a href="#角落标志-tholmangithub-cornershttpsgithubcomtholmangithub-corners-github-starshttpsimgshieldsiogithubstarstholmangithub-cornerssvg">角落标志 <a href="https://github.com/tholman/github-corners">tholman/github-corners</a> <img src="https://img.shields.io/github/stars/tholman/github-corners.svg" alt="Github stars"></a></li>
+      </ul>
+    </li>
+    <li><a href="#github-apps">GitHub Apps</a>
+      <ul>
+        <li><a href="#mergifyhttpsgithubcomappsmergify"><a href="https://github.com/apps/Mergify">Mergify</a></a>
+          <ul>
+            <li><a href="#mergifyiomergify-enginehttpsgithubcommergifyiomergify-engine-github-starshttpsimgshieldsiogithubstarsmergifyiomergify-enginesvg"><a href="https://github.com/Mergifyio/mergify-engine">Mergifyio/mergify-engine</a> <img src="https://img.shields.io/github/stars/Mergifyio/mergify-engine.svg" alt="Github stars"></a></li>
+          </ul>
+        </li>
+        <li><a href="#netlifyhttpsgithubcomappsnetlify"><a href="https://github.com/apps/netlify">Netlify</a></a></li>
+        <li><a href="#weipull">[wei/pull]</a></li>
+        <li><a href="#pullhttpsgithubcomappspull"><a href="https://github.com/apps/pull">Pull</a></a></li>
+        <li><a href="#probotweekly-digesthttpsgithubcomprobotweekly-digest-github-starshttpsimgshieldsiogithubstarsprobotweekly-digestsvg"><a href="https://github.com/probot/weekly-digest">probot/weekly-digest</a> <img src="https://img.shields.io/github/stars/probot/weekly-digest.svg" alt="Github stars"></a></li>
+      </ul>
+    </li>
+    <li><a href="#github-actions">GitHub Actions</a></li>
+    <li><a href="#github-工具开发">Github 工具开发</a>
+      <ul>
+        <li><a href="#webhook">webhook</a>
+          <ul>
+            <li><a href="#neteasegamegit-webhookhttpsgithubcomneteasegamegit-webhook-github-starshttpsimgshieldsiogithubstarsneteasegamegit-webhooksvg"><a href="https://github.com/NetEaseGame/git-webhook">NetEaseGame/git-webhook</a> <img src="https://img.shields.io/github/stars/NetEaseGame/git-webhook.svg" alt="Github stars"></a></li>
+            <li><a href="#github-webhook-handlerhttpsgithubcomgithub-webhook-handler-github-starshttpsimgshieldsiogithubstarsgithub-webhook-handlersvg"><a href="https://github.com/github-webhook-handler">github-webhook-handler</a> <img src="https://img.shields.io/github/stars/github-webhook-handler.svg" alt="Github stars"></a></li>
+            <li><a href="#go-playgroundwebhookshttpsgithubcomgo-playgroundwebhooks-github-starshttpsimgshieldsiogithubstarsgo-playgroundwebhookssvg"><a href="https://github.com/go-playground/webhooks">go-playground/webhooks</a> <img src="https://img.shields.io/github/stars/go-playground/webhooks.svg" alt="Github stars"></a></li>
+            <li><a href="#hustccwebhookithttpsgithubcomhustccwebhookit-github-starshttpsimgshieldsiogithubstarshustccwebhookitsvg"><a href="https://github.com/hustcc/webhookit">hustcc/webhookit</a> <img src="https://img.shields.io/github/stars/hustcc/webhookit.svg" alt="Github stars"></a></li>
+          </ul>
+        </li>
+        <li><a href="#gordaissue-manhttpsgithubcomgordaissue-man-github-starshttpsimgshieldsiogithubstarsgordaissue-mansvg"><a href="https://github.com/gorda/issue-man">gorda/issue-man</a> <img src="https://img.shields.io/github/stars/gorda/issue-man.svg" alt="Github stars"></a></li>
+        <li><a href="#building-apps">Building apps</a></li>
+        <li><a href="#building-actions">Building actions</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
